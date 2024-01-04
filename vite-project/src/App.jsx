@@ -1,16 +1,16 @@
 import './App.scss'
 import { Header } from './components/header/Header'
 import { Main } from './components/main/main'
- import { Footer } from './components/footer/Footer'
+import { Footer } from './components/footer/Footer'
+
 
 function App() {
 
-  return (
+ return (
     <>
-<Header></Header>
-<Main></Main>
-<Footer></Footer>
-
+      <Header></Header>
+      <Main></Main>
+      <Footer></Footer>
     </>
   )
 }
