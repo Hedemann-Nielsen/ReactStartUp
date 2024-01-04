@@ -1,7 +1,9 @@
+import style from './Header.module.scss';
+
 export const Header = () => {
     return(
-    <header>
-        <h1>My First React Project</h1>
+    <header className={style.headerWrapper}>
+        <h1>Velkommen til min side</h1>
     </header>
     
     )

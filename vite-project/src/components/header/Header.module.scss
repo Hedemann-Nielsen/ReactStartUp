@@ -1,0 +1,10 @@
+@use "../../styles/helpers/mixins.scss";
+@use "../../styles/helpers/variables.scss";
+
+.headerWrapper {
+	h1 {
+		color: variables.$light;
+		@include mixins.whitespace;
+		@include mixins.center;
+	}
+}

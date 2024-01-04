@@ -1,0 +1,12 @@
+@use "../../styles/helpers/mixins.scss";
+
+.footerWrapper {
+	margin-top: auto;
+	background-color: black;
+
+	p {
+		@include mixins.center;
+		@include mixins.whitespace;
+		color: #fefefe;
+	}
+}

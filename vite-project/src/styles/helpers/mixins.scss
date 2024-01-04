@@ -1,0 +1,14 @@
+@use "./variables.scss";
+
+@mixin center {
+	justify-content: center;
+	text-align: center;
+}
+
+@mixin whitespace {
+	padding: 50px;
+}
+
+@mixin border {
+	border: solid 2px variables.$color2;
+}

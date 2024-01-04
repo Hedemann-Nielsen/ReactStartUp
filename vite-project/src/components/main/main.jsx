@@ -1,11 +1,9 @@
 import { PageTitle } from "../PageTitle/PageTitle"
-import { List } from "../list/List"
 import { Welcome } from "../welcome/welcome"
 import { Favorites } from "../favorites/Favorites"
+import style from './Main.module.scss';
 
-const arrItems = [
-    'Tim', 'Kasper', 'Heinz', 'Bo'
-]
+
 
 const favoritDishes = [
     'Pizza', 'Sushi', 'Burgers', 'Pasta', 'Chocolate Cake'
@@ -13,27 +11,21 @@ const favoritDishes = [
 const favoritMovies = [
     'The Shawshank Redemption', 'The Godfather', 'The Dark Knight', 'Pulp Fiction', 'Inception'
 ]
-const allFavorits = [
-    {type: 'Dishes', data: favoritDishes},
-    {type: 'Movies', data: favoritMovies}
-]
-// const names = [
-//     'Alice', 'Bob', 'Charlie', 'David', 'Eva'
-// ]
 
 export const Main = () => {
     return(
-    <main>
+    <main className={style.main} >
         <PageTitle 
-            pagetitle="Velkommen til min side"
-            hest ="om en hest">
+            pagetitle="Dette er mit første react project"
+            undertitle="her prøver jeg lidt forskellige ting af">
         </PageTitle>
         <Welcome name="Alice"></Welcome>
         <Welcome name="Bob"></Welcome>
         <Welcome name="Charlie"></Welcome>
-        <Favorites data={allFavorits}></Favorites>
-        <List data={arrItems}></List>
-        <p>Jeg startede mit første React-projekt i dag. Spændende rejse ind i en ny frontend-verden</p>
+        <h6>My favorite dishes</h6>
+        <Favorites data={favoritDishes}></Favorites>
+        <h6>My favorite movies</h6>
+        <Favorites data={favoritMovies}></Favorites>
     </main>
     
     )

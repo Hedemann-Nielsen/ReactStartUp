@@ -1,0 +1,12 @@
+@use "../../styles/helpers/mixins.scss";
+@use "../../styles/helpers/variables.scss";
+
+.undertitle {
+	@include mixins.center;
+	color: variables.$light;
+}
+
+.undertitle2 {
+	@include mixins.center;
+	color: variables.$light;
+}

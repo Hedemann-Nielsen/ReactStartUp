@@ -1,0 +1,17 @@
+@use "../../styles/helpers/mixins.scss";
+@use "../../styles/helpers/variables.scss";
+
+.list {
+	@include mixins.whitespace;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	li {
+		list-style: none;
+		padding: 10px;
+	}
+	@include mixins.center;
+	padding: 10px;
+	color: variables.$color4;
+}
