@@ -1,12 +1,22 @@
+/* Gallery.module.scss */
 .galleri {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	display: flex;
+	flex-wrap: wrap;
 	gap: 20px;
+	justify-content: space-between;
 	max-width: 100vw;
 }
 
 img {
+	flex: 1;
 	margin: 10px 0;
-	width: 100%;
-	aspect-ratio: 2/1;
+	max-width: calc(
+		33.3% - 20px
+	); /* Ændret bredden til 50% for at have to billeder ved siden af hinanden */
+}
+
+@media (max-width: 768px) {
+	img {
+		max-width: calc(100% - 20px); /* Ét billede pr. række på mindre skærme */
+	}
 }

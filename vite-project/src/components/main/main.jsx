@@ -14,7 +14,9 @@ const arrPictures = [
    './src/assets/images/forrest.jpg',
    './src/assets/images/green-nature.jpg',
    './src/assets/images/northern-light.jpg',
-   './src/assets/images/sunset.jpg'
+   './src/assets/images/sunset.jpg',
+   './src/assets/images/sunset2.jpg',
+   './src/assets/images/feather.jpg'
 ];
 
 
