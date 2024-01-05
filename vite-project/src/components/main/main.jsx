@@ -1,8 +1,21 @@
-import { PageTitle } from "../PageTitle/PageTitle"
-import { Welcome } from "../welcome/welcome"
-import { Favorites } from "../favorites/Favorites"
+import { PageTitle } from "../PageTitle/PageTitle";
+import { Welcome } from "../welcome/welcome";
+import { Favorites } from "../favorites/Favorites";
 import style from './Main.module.scss';
+import { Gallery } from "../gallery/gallery";
 
+const arrPictures = [
+   './src/assets/images/bird.jpg',
+   './src/assets/images/butterflyes.jpg',
+   './src/assets/images/cherry.jpg',
+   './src/assets/images/fall-forest.jpg',
+   './src/assets/images/flower1.jpg',
+   './src/assets/images/flower2.jpg',
+   './src/assets/images/forrest.jpg',
+   './src/assets/images/green-nature.jpg',
+   './src/assets/images/northern-light.jpg',
+   './src/assets/images/sunset.jpg'
+];
 
 
 const favoritDishes = [
@@ -26,6 +39,8 @@ export const Main = () => {
         <Favorites data={favoritDishes}></Favorites>
         <h6>My favorite movies</h6>
         <Favorites data={favoritMovies}></Favorites>
+        <h6>My photo gallery</h6>
+      <Gallery pictures={arrPictures}></Gallery> 
     </main>
     
     )
