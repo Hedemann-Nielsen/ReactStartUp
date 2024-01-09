@@ -1,0 +1,7 @@
+@use "../../styles/helpers/mixins.scss";
+
+.ContentWrapper {
+	color: #fefefe;
+	@include mixins.center;
+	padding: 20px;
+}

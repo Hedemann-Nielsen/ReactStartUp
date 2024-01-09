@@ -7,8 +7,8 @@ export const Gallery = props => {
         <img 
             key={index} 
             src={picture} 
-            // alt={`Billede ${picture}`} 
-            // title={`${picture.substr(picture.lastIndexOf('/')+1).replace('.jpg',"")}`}
+            alt={`Billede ${picture}`} 
+            title={`${picture.substr(picture.lastIndexOf('/')+1).replace('.jpg',"")}`}
             />
             
       ))}
