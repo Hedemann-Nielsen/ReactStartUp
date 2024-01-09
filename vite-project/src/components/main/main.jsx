@@ -42,7 +42,7 @@ export const Main = () => {
         <h6>My favorite movies</h6>
         <Favorites data={favoritMovies}></Favorites>
         <h6>My photo gallery</h6>
-      <Gallery pictures={arrPictures}></Gallery> 
+        <Gallery pictures={arrPictures}></Gallery> 
     </main>
     
     )
