@@ -1,0 +1,10 @@
+@use "../../styles/helpers/mixins.scss";
+@use "../../styles/helpers/variables.scss";
+
+.main {
+	h6 {
+		@include mixins.center;
+		font-size: 3em;
+		color: variables.$color3;
+	}
+}

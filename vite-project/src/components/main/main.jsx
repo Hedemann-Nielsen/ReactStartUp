@@ -19,7 +19,6 @@ const arrPictures = [
    './src/assets/images/feather.jpg'
 ];
 
-
 const favoritDishes = [
     'Pizza', 'Sushi', 'Burgers', 'Pasta', 'Chocolate Cake'
 ]
@@ -27,9 +26,10 @@ const favoritMovies = [
     'The Shawshank Redemption', 'The Godfather', 'The Dark Knight', 'Pulp Fiction', 'Inception'
 ]
 
-export const Main = () => {
+export const Main = ({children}) => {
     return(
     <main className={style.main} >
+        {children}
         <PageTitle 
             pagetitle="Dette er mit første react project"
             undertitle="her prøver jeg lidt forskellige ting af">
