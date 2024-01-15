@@ -6,6 +6,7 @@ import { Favorites } from "../../components/favorites/Favorites";
 import style from './Home.module.scss';
 import { Gallery } from "../../components/gallery/gallery";
 import { Counter } from "../../components/counter/counter";
+import { Greeting } from '../../components/greeting/Greeting';
 
 const arrPictures = [
     './src/assets/images/bird.jpg',
@@ -40,6 +41,7 @@ export const Home =  ({children}) => {
             undertitle="her prøver jeg lidt forskellige ting af">
         </PageTitle>
         <Counter></Counter>
+        <Greeting></Greeting>
         <Welcome name="Alice"></Welcome>
         <Welcome name="Bob"></Welcome>
         <Welcome name="Charlie"></Welcome>
