@@ -5,6 +5,7 @@ import { Welcome } from "../../components/welcome/welcome";
 import { Favorites } from "../../components/favorites/Favorites";
 import style from './Home.module.scss';
 import { Gallery } from "../../components/gallery/gallery";
+import { Counter } from "../../components/counter/counter";
 
 const arrPictures = [
     './src/assets/images/bird.jpg',
@@ -38,6 +39,7 @@ export const Home =  ({children}) => {
             pagetitle="Dette er mit første react project"
             undertitle="her prøver jeg lidt forskellige ting af">
         </PageTitle>
+        <Counter></Counter>
         <Welcome name="Alice"></Welcome>
         <Welcome name="Bob"></Welcome>
         <Welcome name="Charlie"></Welcome>
